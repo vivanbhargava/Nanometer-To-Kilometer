@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Nanometer to Kilometer</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Nanometer</label>
+            <input id="inputnano" type="number" placeholder="Nanometer" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Kilometer: <span id="outputkilo"></span></p>
+
+    <script>
+            valNum = parseFloat(valNum);
+        function lengthorDistanceConverter(valNum) {
+            document.getElementById("outputkilo").innerHTML = valNum/1e+12;
+        }
+    </script>
+
+</body></html>
